@@ -38,6 +38,7 @@ li {
   margin-right: 20px;
   font-size: 24px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 li:hover {
   color: #fff;

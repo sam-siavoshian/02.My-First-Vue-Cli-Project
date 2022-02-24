@@ -1,11 +1,23 @@
 <template>
-  <div class="modalParent">
+  <div class="modalParent" @click="closeModal">
     <div class="modal">
       <h3 class="modal-title">Sam Siavoshian</h3>
       <p class="modal-description">Front End Developer</p>
     </div>
   </div>
 </template>
+
+<script>
+
+export default {
+  methods: {
+    closeModal () {
+      this.$emit('close')
+    }
+  },
+}
+
+</script>
 
 <style>
   .modalParent {
@@ -17,9 +29,9 @@
   }
   .modal {
     width: 400px;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
-    background-color: crimson;
+    background-color: #41B883;
     margin: 100px auto;
   }
   .modal-title {
